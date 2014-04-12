@@ -6,7 +6,6 @@ Proyecto para la clase de Seguridad en aplicaciones web.
 ---
 
 ## Características de calidad
----
 
 * ID's de usuarios no sensibles a mayúsculas.
 * Control de contraseña fuerte.

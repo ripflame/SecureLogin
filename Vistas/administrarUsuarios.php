@@ -1,4 +1,4 @@
-<!DOCTYPE HTM>
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Admnistración de usuarios</title>
@@ -7,20 +7,21 @@
 	<body>
 		
 		<?php
-			//las siguientes funciones solo están aqui para realizar pruebas.--------------------------------------------------
-			function puedoEditar(){
-				return TRUE;
-			}
-			
-			function puedoEliminar(){
-				return TRUE;
-			}
-			//-----------------------------------------------------------------------------------------------------------------
+		//las siguientes funciones solo están aqui para realizar pruebas.--------------------------------------------------
+		function puedoEditar(){
+			return TRUE;
+		}
+		
+		function puedoEliminar(){
+			return TRUE;
+		}
+		//-----------------------------------------------------------------------------------------------------------------
 		
 		function generarTablaUsuarios(){
 			//Debe devolver un array de usuarios donde cada usuario debe tener la siguiente estructura:
 			//{nomuser, nombre, apellidop, apellidom, correo, edad, sexo, permisos[1, 2, 3]}
 			//donde permisos es un array que contiene los ids de los permisos que tiene el usuario.
+			//
 			//$listaUsuarios = obtenerUsuarios();
 			
 			//Las siguientes lineas solo están para probar la funcionalidad de la pag.------------------------------------------

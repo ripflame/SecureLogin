@@ -15,17 +15,25 @@
 	height: 50px;
 	font-size: 16px;
 	color: #151515;
+	background: #C0C0C0;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
 }
 .ContenedorTitulo h1 {
-	font-size: 21px;
+	font-size: 24px;
 	color: #0A2229;
 	padding: 15px 0px 0px 10px;
+	font-weight: normal;
 }
 
 .ContenedorContenido {
 	width: 800px;
 	height: 500px;
 	padding: 10px 3px 3px 3px;
+	overflow-y: auto;
 }
 
 .PiePagina {
@@ -33,10 +41,19 @@
 	height: 20px;
 	font-size: 11px;
 	color: #525252;
+	background: #C0C0C0;
 	text-align: center;
 	border-top-style: solid;
 	border-top-color: #999999;
-	padding-top: 10px;	
+	padding-top: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;		
+}
+
+.Comentario {
+	font-size: 11px;
+	color: #525252;
 }
 
 table {

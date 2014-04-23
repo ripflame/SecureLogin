@@ -1,4 +1,4 @@
-<!DOCTYPE HTM>
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Editar usuario</title>
@@ -11,10 +11,11 @@
 		//El array con los datos del usuario debe tener la siguiente estructura:
 		//{nomuser, nombre, apellidop, apellidom, correo, edad, sexo, permisos[1, 2, 3]}
 		//donde permisos es un array que contiene los ids de los permisos que tiene el usuario.
+		//
 		//$usuarioSeleccionado = obtenerUsuarioSeleccionado();
 		
 		//Las siguientes lineas solo están para probar la funcionalidad de la pag.------------------------------------------
-		$permisosUsuarioSel = array(1,2,3);
+		$permisosUsuarioSel = array(2,3);
 		$usuarioSeleccionado = array("useruno","Juan","Perez","Lopez","pelo@mail.com", 19, 'H', $permisosUsuarioSel);
 		//------------------------------------------------------------------------------------------------------------------
 		$nomuser = $usuarioSeleccionado[0];
@@ -29,7 +30,7 @@
 		?>
 		<div class="ContenedorPrincipal">
 			<div class="ContenedorTitulo">
-				<h1>Editar datos del usuario <?php echo $nomuser ?></h1>	
+				<h1>Editar datos del usuario []<?php echo $nomuser ?>]</h1>	
 			</div>				
 			<div class="ContenedorContenido">
 				<p>Usuario : <input type="text" value=<?php echo $nomuser ?>></p>

@@ -1,0 +1,60 @@
+
+
+.ContenedorPrincipal {
+	width: 800px;
+	height: 600px;
+	background: #F2F2F2;
+	font-family: Verdana;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+}
+
+.ContenedorTitulo {
+	width: 800px;
+	height: 50px;
+	font-size: 16px;
+	color: #151515;
+}
+.ContenedorTitulo h1 {
+	font-size: 21px;
+	color: #0A2229;
+	padding: 15px 0px 0px 10px;
+}
+
+.ContenedorContenido {
+	width: 800px;
+	height: 500px;
+	padding: 10px 3px 3px 3px;
+}
+
+.PiePagina {
+	width: 800px;
+	height: 20px;
+	font-size: 11px;
+	color: #525252;
+	text-align: center;
+	border-top-style: solid;
+	border-top-color: #999999;
+	padding-top: 10px;	
+}
+
+table {
+	border-style: solid;	
+	border-collapse: collapse;	
+}
+table th {
+	font-weight: normal;
+	font-size: 14px;
+	color: #0A2229;
+	padding-left: 18px;
+	background: #BDBDBD; 
+}
+table tr {
+	font-size: 12px;
+}
+table td {
+	text-align: center;
+}
+
+	

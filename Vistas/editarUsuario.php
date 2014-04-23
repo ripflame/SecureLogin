@@ -30,7 +30,7 @@
 		?>
 		<div class="ContenedorPrincipal">
 			<div class="ContenedorTitulo">
-				<h1>Editar datos del usuario []<?php echo $nomuser ?>]</h1>	
+				<h1>Editar datos del usuario [<?php echo $nomuser ?>]</h1>	
 			</div>				
 			<div class="ContenedorContenido">
 				<p>Usuario : <input type="text" value=<?php echo $nomuser ?>></p>

@@ -1,0 +1,70 @@
+/* CSS Document */
+#barra_menu {
+	background: url("../images/nav-grad2.png") repeat-x scroll left top ;		
+/*	background: #990000;*/
+
+	position: relative;
+	top: -25px;
+	height:35px;
+	z-index: 0;
+	
+	margin-right:auto;
+	margin-left:auto;
+	width: 800px;
+	font-family:"Times New Roman", Times, serif;
+	font-size:12px;
+	text-align:center;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+}
+#contenedor_elementos h3.alinea-middle{
+	background:url("../images/nav-grad-secondary.png") repeat-x scroll left top ;
+	-moz-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;;
+	display:block;
+	height:30px;
+	position:relative;
+	top:-14px;
+	color:#FFFFFF;
+	text-align:center;	
+}
+#menu_lateral h3.alinea-middle{
+	background:url("../images/nav-grad-secondary.png") repeat-x scroll left top ;
+	-moz-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;;
+	display:block;
+	height:30px;
+	position:relative;
+	top:-14px;
+	color:#FFFFFF;
+	text-align:center;	
+}
+#barra_menu ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #DBB2B2;
+	display: block;
+	height: 35px;
+}
+#lista_categorias ul li a:hover{
+	background-color:#8C0000;
+	color:#FFFFFF;
+}
+#barra_menu ul li.elegido{
+	 background-color:#790000;
+	 border:dashed thin;
+	 border-color:#000000;
+ 	color:#FFFFFF;
+ }
+ #toolTipBox {
+       display: none;
+       padding: 8px;
+       font-size: 11px;
+       border: black solid 1px;
+       font-family: Times;
+       position: fixed;
+       background-color:#FF9393;
+       color: 000000;
+	   z-index:500000;
+}

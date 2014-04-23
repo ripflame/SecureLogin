@@ -1,0 +1,38 @@
+/* CSS Document */
+
+#barra_superior{
+	background-image: url(../images/header-grad.png);
+	background-repeat: repeat-x;
+	height:110px;
+	margin-top:0px;
+	position:relative;
+	
+	border-radius:10px;
+	width:800px;
+}
+#barra_menu ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 55px;  /* cambiar si agrego mas opciones en barra_menu */
+
+}
+#barra_menu ul li{	
+    padding-left: 10px;
+    padding-right: 10px;
+	float: left;
+	width: 80px;
+	height: 33px;
+}
+#barra_menu ul li a span {
+	position: relative;
+	top: 9.5px;
+}
+
+#barra_menu ul li a:hover{
+	color:#FFFFFF;
+}
+
+#barra_menu ul li.elegido a{
+	color:#FFFFFF;
+}

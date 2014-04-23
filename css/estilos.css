@@ -1,0 +1,90 @@
+.establece-tamanio{
+	clear:both;
+	width:800px;
+	margin:0 auto;
+}
+
+
+body {
+	background-color: #E5E5E5;	
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size:12px;
+	font-family:"Times New Roman", Times, serif;
+	outline:0 none;
+	padding:0;
+}
+
+#header {
+	width:800px;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#logo_barra{
+	float:left;
+	width:auto;
+	height:auto;
+	position:relative;
+	top: 20px;
+	left: 20px;
+}
+.div_tbl_col{
+	display:table-cell;
+}
+#bloque_info{
+	float:right;
+	position:relative;
+	top: 20px;
+	right: 20px;
+	color:#FFFFFF
+}
+#bloque_info a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+#bloque_info a:hover{
+	color:#FF0000;
+	text-decoration:underline;
+}
+
+#info_usuario{
+	float:left;
+	margin-right:3px;
+	width:200px;
+	text-align:right;
+}
+
+#avatar{
+	float:right;
+}
+#info_arriba{
+	display:table-row;
+}
+#info_cuenta{
+	position:relative;
+	display:table;
+}
+#contenedor_pagina {
+	position:relative;
+	top:-20px;
+}
+
+
+#pie_pagina{
+	position:relative;
+	text-align:center;
+	clear: both;
+	border-top-style:ridge;
+	border-top-width:thin;
+	border-top-color:#000000;
+	padding-top:8px;
+	top:8px;
+}
+
+.imglink{
+	cursor:pointer;
+	cursor:hand;
+}

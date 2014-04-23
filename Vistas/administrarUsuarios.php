@@ -8,7 +8,9 @@
 		
 		<?php
 		 function generarTablaUsuarios(){
-		 	
+			//Debe devolver un array de usuarios donde cada usuario debe tener la siguiente estructura:
+			//{nomuser, nombre, apellidop, apellidom, correo, edad, sexo, permisos[1, 2, 3]}
+			//donde permisos es un array que contiene los ids de los permisos que tiene el usuario.
 			$listaUsuarios = obtenerUsuarios();
 			
 		 	echo "<table id=\"tablaUsusarios\">					
@@ -21,22 +23,58 @@
 						<th>Correo</th>
 						<th>Edad</th>
 						<th>Sexo</th>
+						<th>Permisos</th>
 						<th></th>
 						<th></th>
 					</tr>";
-			for ($i = 0; $x < count($listaUsuarios); $i++) {
+			for ($i = 0; $i < count($listaUsuarios); $i++) {
+				$nomuser = $listaUsuarios[0];
+				$nombre = $listaUsuarios[1];
+				$apellidop = $listaUsuarios[2];
+				$apellidom = $listaUsuarios[3];				
+				$correo = $listaUsuarios[4];
+				$edad = $listaUsuarios[5];
+				$sexo = $listaUsuarios[6];
+				// Debe contener un array con los permisos del usuario seleccionado
+				$permisos = $listaUsuarios[7];
 				echo  "<tr>
 						<tr><input type=\"checkbox\" /></tr>
-						<td>useruno</td>
-						<td>Juan</td>
-						<td>Perez</td>
-						<td>Lopez</td>
-						<td>pelo@mail.com</td>
-						<td>19</td>
-						<td>H</td>
-						<td><input type=\"button\" value=\"Editar\"/></td>											
-						<td><input type=\"button\" value=\"Eliminar\"/></td>
-					</tr>";
+						<td>" + $nomuser + "</td>
+						<td>"+ $nombre + "</td>
+						<td>" + $apellidop + "</td>
+						<td>" + $apellidom + "</td>
+						<td>" + $correo + "</td>
+						<td>" + $edad + "</td>
+						<td>" + $sexo + "</td>
+						<td>"; 
+				for ($i=0; $i < count($permisos); $i++) { 
+					switch ($permisos[i]) {
+						case 1:
+							echo "-Crear usuario ";
+							break;
+						case 2:
+							echo "-Editar usuario ";
+							break;
+						case 3:
+							echo "-Eliminar Usuario ";
+							break;						
+						default:
+							echo "No especificado";
+							break;
+					}
+				} 						
+				echo "<td>";
+				$puedoEditar = puedoEditar();
+				$puedoEliminar = puedoEliminar();							
+				if ($puedoEditar) {
+					echo "<td><input type=\"button\" value=\"Editar\"/></td>											
+							<td><input type=\"button\" value=\"Eliminar\"/></td>";					
+				}					
+				if ($puedoEliminar) {
+					echo "<td><input type=\"button\" value=\"Editar\"/></td>											
+							<td><input type=\"button\" value=\"Eliminar\"/></td>";					
+				}
+				echo "</tr>";
 			}		
 			echo "</table>";
 		 }

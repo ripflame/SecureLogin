@@ -10,7 +10,7 @@
 			$this->email = $mail;
 			$this->edad = $age;
 			$this->genero = $gen;
-			$this->password = $pwd;
+			$this->password = $pass;
 			$this->privilegio = $priv;
 		}
 		

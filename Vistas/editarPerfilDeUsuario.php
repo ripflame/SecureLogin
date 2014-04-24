@@ -52,10 +52,10 @@
 					</p>
 					<p>Edad: <?php echo obtenerUsuario()->getEdad(); ?></p>
 					<p>Sexo: <?php echo obtenerUsuario()->getGenero(); ?></p>
-					<p>
-						Contrasena: <input type="password" name="contrasena" value=<?php echo obtenerUsuario()->getPassword(); ?> disabled></p>
+					<p>Contraseña: <input type="password" value=<?php echo obtenerUsuario()->getPassword(); ?> disabled></p>
+					<input type="hidden" name="contrasena" value=<?php echo obtenerUsuario()->getPassword(); ?> id="contrasena"/>
 					<p>Para cambiar la contraseña ingrese la contraseña actual y luego ingrese la nueva contraseña.</p>
-					<p>Contrasena actual: <input type="password" name="confirmContrasena" ></p>
+					<p>Contraseña actual: <input type="password" name="confirmContrasena" ></p>
 					<p>Nueva contraseña: <input type="password" name="nuevaContrasena" ></p> 
 					<input type="submit" value="Guardar datos de perfil"/>
 				</form>
